@@ -44,7 +44,10 @@ function App() {
         <Route path="/pannier" element={<Pannier />} />
         <Route path="/dashbord" element={<Dashbordd />} />
         <Route element={<PrivateRoute />}>
-          <Route path="/profil" element={<Profil />} />
+          <Route
+            path="/profil"
+            element={<Profil ping={ping} setping={setping} />}
+          />
         </Route>
       </Routes>
       <Footer />
